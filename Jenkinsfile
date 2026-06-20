@@ -1,23 +1,19 @@
 pipeline {
-   agent any
+    agent any
 
-   stages {
+    stages {
 
-stage("build") {
-  steps {
-   echo 'build started'
- }
-}
+        stage('build') {
+            steps {
+                echo 'build started'
+            }
+        }
 
- stage("run python") {
-   steps{
-   sh 'python3 hello.py'
- }
-}
+        stage('run python') {
+            steps {
+                sh 'python3 hello.py'
+            }
+        }
 
-}
-
-
-}
-
+    }
 }
