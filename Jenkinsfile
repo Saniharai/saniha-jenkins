@@ -11,9 +11,12 @@ stage("build") {
 
  stage("run python") {
    steps{
-   sh 'python3 hello.py"
+   sh 'python3 hello.py'
  }
 }
+
+}
+
 
 }
 
